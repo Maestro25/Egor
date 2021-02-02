@@ -61,6 +61,15 @@
 	.contacts-list {
 		width: 90%;
 	}
+
+	.page-footer .content-wrapper {
+		align-items: center;
+	}
+
+	.footer-list {
+		flex-direction: column;
+		width: 50%;
+	}
 }
 
 /*======   Mobile First   ======*/
