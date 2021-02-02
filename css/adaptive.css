@@ -11,6 +11,8 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
+
+
 	.burger {
 		display: block;
 
@@ -19,11 +21,46 @@
 	.header-nav {
 		display: none;
 	}
+
+	.contacts-list {
+		width: 80%;
+	}
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
-	/* */
+
+	.promo {
+		flex-direction: column;
+		align-items: center;
+
+	}
+
+	.promo img {
+		width: 100%;
+
+	}
+
+	.promo p {
+		width: 100%;
+	}
+	.services-list {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.services-item {
+		width: 100%;
+	}
+
+	.write-me-form {
+		width: 100%;
+		padding: 1em 1em;
+	}
+
+	.contacts-list {
+		width: 90%;
+	}
 }
 
 /*======   Mobile First   ======*/
