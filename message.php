@@ -7,7 +7,7 @@
 
 		$to = "ya.maestro25@yandex.ru";
 		$subject = "Письмо с сайта";
-		$headers = "От: ".$userEmail; 
+		$headers = "От: ".$userName.": ".$userEmail.", ".$userPhone; 
 
 
 		mail($to, $subject, $headers, $message);

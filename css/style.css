@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
 	font-family: 'Open Sans', Arial, sans-serif;
 	font-size: 16px;
@@ -5,7 +11,9 @@ body {
 	background-color: #fff;
 	color: #000;
 	font-weight: normal;
-	min-width: 1240px;
+  border: 2px solid magenta;
+  width: 100vw;
+  min-width: 320px; 
 }
 
 img {
@@ -14,24 +22,29 @@ img {
 }
 
 .content-wrapper {
-	width: 1200px;
-	padding: 0 20px;
+	max-width: 1200px;
+	width: 90%;
+	padding: 0 5rem;
 	margin: 0 auto;
-  	display: -webkit-flex;
-  	display: -moz-flex;
+  display: -webkit-flex;
+  display: -moz-flex;
  	display: -ms-flex;
-  	display: -o-flex;
-  	display: flex;
-  	flex-direction: column;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column;
 }
 
+.section-heading {
+  font-size: 2rem;
+  font-weight: bold;
+}
 
 /* Шапка сайта */
 
 .page-header {
-	position: relative;
 	background-color: #fff;
 	filter: drop-shadow(0 1px 3px #222);
+  width: 100vw;
 
 }
 
@@ -39,18 +52,34 @@ img {
 	position: fixed;
 	top: 0;
 	z-index: 1;
-	width: 100%;
 }
 
 .page-header .content-wrapper {
 	flex-direction: row;
 	justify-content: space-between;
+
 }
 	
 .header-nav {
 	margin-left: auto;
 }
 
+.burger {
+  width: 2rem;
+  padding: 0;
+  border: none;
+  margin-left: auto;
+  display: none;
+
+}
+
+.burger:active {
+  outline: none;
+}
+
+.burger img {
+  width: 100%;
+}
 
 .nav-list {
    	display: -webkit-flex;
@@ -64,11 +93,11 @@ img {
    	list-style: none;
    	margin: 0;
    	padding: 0;
-   	margin-top: 30px;
+   	margin-top: 2rem;
 }
 
 .nav-item {
-	margin-left: 40px;
+	margin-left: 5rem;
 }
 
 .nav-link {
@@ -89,47 +118,46 @@ img {
 /* Промо */
 
 .promo {
-	padding-top: 85px;
+	padding-top: 6rem;
   	display: -webkit-flex;
   	display: -moz-flex;
   	display: -ms-flex;
   	display: -o-flex;
   	display: flex;
-  	flex-direction: column;
   	align-items: center;
+    justify-content: space-between;
   	flex-wrap: wrap;
-  	margin-bottom: 80px;
+  	margin-bottom: 5rem;
 }
 
-.promo-wrapper {
-	display: -webkit-flex;
-  	display: -moz-flex;
-  	display: -ms-flex;
-  	display: -o-flex;
-  	display: flex;
-  	align-items: center;
-  	margin-top: 50px;
-  	margin-bottom: 55px;
+.promo .section-heading {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 5rem;
+}
 
+.promo p {
+  width: 40%;
 }
 
 .promo img {
+  width: 50%;
 	border-radius: 50%;
 }
 
 .promo a {
-	padding: 10px 25px;
+	padding: 0.5rem 2rem;
 	text-decoration: none;
 	color: #000;
 	vertical-align: center;
 	border: 1px solid black;
-	border-radius: 15px;
+	border-radius: 1rem;
 }
 
 /* Наши услуги */
 
 .services {
-	padding-top: 85px;
+	padding-top: 6rem;
 	display: -webkit-flex;
   	display: -moz-flex;
   	display: -ms-flex;
@@ -137,7 +165,7 @@ img {
   	display: flex;
   	flex-direction: column;
   	align-items: center;
-  	margin-bottom: 80px;
+  	margin-bottom: 5rem;
 }
 
 .services-list {
@@ -158,21 +186,22 @@ img {
 
 .services-item {
 	display: -webkit-flex;
-  	display: -moz-flex;
-  	display: -ms-flex;
-  	display: -o-flex;
-  	display: flex;
-  	flex-direction: column;
-  	justify-content: space-between;
-  	align-items: center;
-  	width: 380px;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
 
 }
+
 
 .services-item:nth-child(1),
 .services-item:nth-child(2),
 .services-item:nth-child(3) {
-	margin-bottom: 50px;
+	margin-bottom: 5rem;
 }
 
 button {
@@ -180,8 +209,8 @@ button {
 	background-color: transparent;
 	color: #000;
 	border: 1px solid black;
-	border-radius: 15px;
-	padding: 10px 25px;
+	border-radius: 1rem;
+	padding: 0.5rem 2rem;
 }
 
 .services .show-more:focus {
@@ -197,8 +226,8 @@ button {
   	display: flex;
   	flex-direction: column;
   	align-items: center;
-  	margin-bottom: 80px;
-  	padding-top: 85px;
+  	margin-bottom: 5rem;
+  	padding-top: 6rem;
 
 }
 
@@ -211,7 +240,7 @@ button {
   	display: flex;
   	flex-direction: row;
   	flex-wrap: wrap;
-  	width: 900px;
+  	width: 70%;
   	padding: 20px 50px;
   	margin-top: 40px;
   	border: 2px solid black;
