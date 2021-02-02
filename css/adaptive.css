@@ -25,6 +25,10 @@
 	.contacts-list {
 		width: 80%;
 	}
+
+	.write-me-form {
+		width: 80%;
+	}
 }
 
 /* Extra Small Devices, Phones */
@@ -62,10 +66,16 @@
 		width: 90%;
 	}
 
+	.page-footer .content-wrapper {
+		width: 100%;
+		padding: 0em 0.5em;
+
+	}
 
 	.footer-list {
 		flex-direction: column;
-		width: 70%;
+		width: 60%;
+		text-align: center;
 	}
 }
 
