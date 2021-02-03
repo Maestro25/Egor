@@ -124,10 +124,10 @@
 	}
 }
 
-@media only screen and (orientation: landscape) {
-	
+@media only screen and (max-width: 480px, orientation: landscape) {
+
 	.page-header .content-wrapper{
-		height: 10vh;
+		height: 14vh;
 	}
 
 }
