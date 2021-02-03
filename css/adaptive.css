@@ -71,6 +71,10 @@
 /* Extra Small Devices, Phones */
 @media screen and (max-width: 480px) {
 
+	.burger {
+		background-color: magenta;
+	}
+
 	.page-header .content-wrapper{
 		height: 10vh;
 	}
