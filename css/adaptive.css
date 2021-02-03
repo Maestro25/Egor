@@ -22,7 +22,10 @@
 
 	.burger {
 		display: block;
-		width: 30px;
+		width: 40px;
+		background-color: magenta;
+		
+
 
 	}
 
@@ -71,6 +74,9 @@
 /* Extra Small Devices, Phones */
 @media screen and (max-width: 480px) {
 
+	.burger {
+		background-color: magenta;
+	}
 
 	.page-header .content-wrapper{
 		height: 10vh;
@@ -136,14 +142,6 @@
 		width: 60%;
 		text-align: center;
 	}
-}
-
-@media screen and (max-width: 480px) and (orientation: landscape) {
-
-	.page-header .content-wrapper{
-		height: 14vh;
-	}
-
 }
 
 
