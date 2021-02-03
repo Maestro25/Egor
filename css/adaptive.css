@@ -18,8 +18,18 @@
 
 	}
 
-	.header-nav {
-		display: none;
+	.nav-list {
+		position: absolute;
+		top:8vh;
+		right: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		background-color: #fff;
+		height: 92vh;
+		width: 50%;
+		transform: translateX(100%);
 	}
 
 	.contacts-list {
@@ -33,6 +43,10 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
+
+	.section-heading {
+		margin-bottom: 1em;
+	}
 
 	.promo {
 		flex-direction: column;
@@ -55,6 +69,7 @@
 
 	.services-item {
 		width: 100%;
+		margin-bottom: 1em;
 	}
 
 	.write-me-form {
@@ -70,6 +85,10 @@
 		width: 100%;
 		padding: 0em 0.5em;
 
+	}
+
+	.copyright {
+		text-align: center;
 	}
 
 	.footer-list {
