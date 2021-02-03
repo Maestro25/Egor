@@ -53,8 +53,17 @@ img {
 
 }
 
-.logo img {
+.logo  {
+  display: inline-block;
+  height: 100%;
   max-height: 8vh;
+  
+}
+
+.logo img {
+  max-width: 100%;
+  max-height: 8vh;
+  
 }
 
 .fixed {
