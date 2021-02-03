@@ -6,12 +6,19 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
-	/* */
+	.nav-list {
+		width: 60%;
+	}
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
 
+	.section-heading {
+		font-size: 1.75rem;
+		
+
+	}
 
 	.burger {
 		display: block;
@@ -27,10 +34,15 @@
 		justify-content: space-around;
 		align-items: center;
 		background-color: #fff;
-		height: 92vh;
+		height: 42vh;
 		width: 50%;
 		transform: translateX(100%);
+		transition: transform 0.5s ease-in;
 	}
+
+	/*.nav-link {
+		opacity: 0;
+	} */
 
 	.contacts-list {
 		width: 80%;
@@ -39,13 +51,24 @@
 	.write-me-form {
 		width: 80%;
 	}
+
+	.nav-active {
+		transform: translateX(0%);
+	}
+
+	
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
+	p {
+		font-size: 0.8rem;
+	}
 
 	.section-heading {
+		font-size: 1.25rem;
 		margin-bottom: 1em;
+
 	}
 
 	.promo {
