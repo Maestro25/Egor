@@ -1,0 +1,152 @@
+/*=========    Desktop First    =========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+	/* */
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+	.nav-list {
+		width: 60%;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+
+	.section-heading {
+		font-size: 1.75rem;
+		
+
+	}
+
+	.burger {
+		display: block;
+		width: 30px;
+
+	}
+
+	.nav-list {
+		position: absolute;
+		top: 8vh;
+		right: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		background-color: #fff;
+		height: 42vh;
+		width: 50%;
+		transform: translateX(100%);
+		transition: transform 0.5s ease-in;
+	}
+
+	/*.nav-link {
+		opacity: 0;
+	} */
+
+	.contacts-list {
+		width: 80%;
+	}
+
+	.write-me-form {
+		width: 80%;
+	}
+
+	.nav-active {
+		transform: translateX(0%);
+	}
+
+	
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+
+	
+	p {
+		font-size: 0.8rem;
+	}
+
+	.section-heading {
+		font-size: 1.25rem;
+		margin-bottom: 1em;
+
+	}
+
+	.promo {
+		flex-direction: column;
+		align-items: center;
+
+	}
+
+	.promo img {
+		width: 100%;
+
+	}
+
+	.promo p {
+		width: 100%;
+	}
+	.services-list {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.services-item {
+		width: 100%;
+		margin-bottom: 1em;
+	}
+
+	.write-me-form {
+		width: 100%;
+		padding: 1em 1em;
+	}
+
+	.contacts-list {
+		width: 90%;
+	}
+
+	.page-footer .content-wrapper {
+		width: 100%;
+		padding: 0em 0.5em;
+
+	}
+
+	.copyright {
+		text-align: center;
+	}
+
+	.footer-list {
+		flex-direction: column;
+		width: 60%;
+		text-align: center;
+	}
+}
+
+@media only screen and (orientation: landscape) {
+	
+	.page-header .content-wrapper{
+		height: 10vh;
+	}
+
+}
+
+/*======   Mobile First   ======*/
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+	/* */
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+	/* */
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+	/* */
+}
+
+
