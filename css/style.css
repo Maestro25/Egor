@@ -43,9 +43,13 @@ img {
 .page-header {
 	background-color: #fff;
 	filter: drop-shadow(0 1px 3px #222);
-  height: 8vh;
   width: 100vw;
   min-width: 320px;
+
+}
+
+.page-header .content-wrapper {
+   height: 8vh;
 
 }
 
@@ -70,9 +74,9 @@ img {
   width: 2em;
   padding: 0;
   border: none;
-  margin-left: auto;
   display: none;
   -webkit-appearance: none;
+  appearance: none;
 
 
 }
