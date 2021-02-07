@@ -5,11 +5,11 @@
 }
 
 body {
-	font-family: 'Open Sans', Arial, sans-serif;
+	font-family: 'Vollkorn', sans-serif;
 	font-size: 16px;
 	line-height: 26px;
-	background-color: #fff;
-	color: #000;
+	background-color: #f2f2f2;
+	color: #8c8c8c;
 	font-weight: normal;
   width: 100%;
   min-width: 320px; 
@@ -33,15 +33,17 @@ img {
 }
 
 .section-heading {
-  font-size: 2rem;
+  font-family: 'Vollkorn', sans-serif;
+  font-size: 2.25rem;
   font-weight: bold;
   margin-bottom: 2em;
+  color: #262626;
 }
 
 /* Шапка сайта */
 
 .page-header {
-	background-color: #fff;
+	background-color: #737373;
 	filter: drop-shadow(0 1px 3px #222);
   width: 100vw;
   min-width: 320px;
@@ -137,24 +139,26 @@ img {
 
 
 .nav-link {
-	font-size: ;
-	line-height: ;
+	font-size: 1.2rem;
+	font-weight: bold;
 	text-decoration: none;
-	color: inherit;
+	color: #f2f2f2;
 }
 
 .nav-link:hover {
-	color: #2f456b;
+	color: #bfbfbf;
+  transition: all 0.3s ease;
 }
 
 .nav-link:active {
-	color: #2c476b;
+	color: #a7a7a7;
+  transition: all 0.3s ease;
 }
 
 /* Промо */
 
 .promo {
-	padding-top: 6rem;
+	padding-top: 8rem;
   	display: -webkit-flex;
   	display: -moz-flex;
   	display: -ms-flex;
@@ -172,6 +176,7 @@ img {
 
 .promo p {
   width: 40%;
+  font-size: 1.25rem;
 }
 
 .promo img {
@@ -182,16 +187,23 @@ img {
 .promo a {
 	padding: 0.5rem 2rem;
 	text-decoration: none;
-	color: #000;
+	color: #8c8c8c;
 	vertical-align: center;
-	border: 1px solid black;
+	border: 1px solid #737373;
 	border-radius: 1rem;
+}
+
+.promo a:hover,
+.promo a:active {
+  color: #bfbfbf;
+  border-color: #bfbfbf;
+  transition: all 0.3s ease;
 }
 
 /* Наши услуги */
 
 .services {
-	padding-top: 6rem;
+	padding-top: 8rem;
 	display: -webkit-flex;
   	display: -moz-flex;
   	display: -ms-flex;
@@ -224,7 +236,24 @@ img {
   justify-content: space-between;
   align-items: center;
   width: 30%;
+  height: 60%;
 
+}
+
+.services-heading {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #8c8c8c;
+}
+
+.services-item img {
+  filter: grayscale(1);
+  margin-bottom: 1em;
+  border-radius: 3em;
+}
+
+.services-item p {
+  margin-bottom: 1rem;
 }
 
 
@@ -235,13 +264,24 @@ img {
 }
 
 button {
+  font-size: 1.1rem;
 	display: inline-block;
 	background-color: transparent;
-	color: #000;
-	border: 1px solid black;
+	color: #737373;
+	border: 1px solid #737373;
 	border-radius: 1rem;
 	padding: 0.5rem 2rem;
 }
+
+button:hover,
+button:active {
+  background-color: #e6e6e6;
+  color: #a6a6a6;
+  border-color: #a6a6a6;
+  transition: all 0.3s ease;
+  
+}
+
 
 .services .show-more:focus {
 	outline: none;
@@ -257,7 +297,7 @@ button {
   	flex-direction: column;
   	align-items: center;
   	margin-bottom: 5rem;
-  	padding-top: 6rem;
+  	padding-top: 8rem;
 
 }
 
