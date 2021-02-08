@@ -185,6 +185,12 @@
 		height: 14vh;
 	}
 
+	.promo,
+	.services, 
+	.write-me {
+		padding-top: 15vh;
+	}
+
 
 	
 	p {
