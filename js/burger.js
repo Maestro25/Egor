@@ -17,6 +17,8 @@ const navClose = () => {
 	navLinks.forEach((link) => {
 		link.addEventListener('click', () => {
 			nav.classList.toggle('nav-active');
+
+			burger.classList.toggle('open');
 		});
 	});
 }
