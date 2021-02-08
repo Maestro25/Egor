@@ -112,12 +112,12 @@ h3 {
   -webkit-appearance: none;
   appearance: none;
 
-
 }
 
   .burger:active,
   .burger:focus,
   .burger:focus-within,
+  .burger:hover,
   .burger:visited,
   .burger:focus-visible {
     border: none;

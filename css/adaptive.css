@@ -70,6 +70,8 @@
  		background-color: transparent;
  	}
 
+ 	
+
 
 	.nav-list {
 		position: absolute;
@@ -157,7 +159,7 @@
 	}
 
 	.nav-list {
-		height: 36vh;
+		height: 86vh;
 		top: 14vh;
 
 	}
@@ -169,7 +171,7 @@
 
 
 	.page-header .content-wrapper{
-		height: 10vh;
+		height: 14vh;
 	}
 
 
