@@ -185,6 +185,10 @@
 		height: 14vh;
 	}
 
+	.nav-list {
+		top: 14vh;
+	}
+
 	.promo,
 	.services, 
 	.write-me {
