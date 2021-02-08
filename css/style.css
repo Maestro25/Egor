@@ -5,11 +5,14 @@
 }
 
 body {
-	font-family: 'Vollkorn', sans-serif;
-	font-size: 16px;
+	font-family: 'Alice', sans-serif;
+	font-size: 20px;
 	line-height: 26px;
-	background-color: #f2f2f2;
-	color: #8c8c8c;
+	background: linear-gradient(
+    to top right, 
+    rgb(242, 242, 242),
+    rgb(245, 245, 245));
+	color: #636363;
 	font-weight: normal;
   width: 100%;
   min-width: 320px; 
@@ -20,8 +23,27 @@ img {
   	height: auto;
 }
 
+
+h2 {
+  font-family: 'Vollkorn SC', sans-serif;
+  font-weight: bold;
+  word-spacing: 0.3em;
+  letter-spacing: -0.1em;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-family: 'Vollkorn SC', sans-serif;
+  font-weight: bold;
+  word-spacing: 0.3em;
+  letter-spacing: -0.1em;
+  font-size: 1.5rem;
+
+}
+
 .content-wrapper {
-	max-width: 1200px;
+	max-width: 1440px;
 	width: 90%;
 	margin: 0 auto;
   display: -webkit-flex;
@@ -33,9 +55,6 @@ img {
 }
 
 .section-heading {
-  font-family: 'Vollkorn', sans-serif;
-  font-size: 2.25rem;
-  font-weight: bold;
   margin-bottom: 2em;
   color: #262626;
 }
@@ -60,6 +79,10 @@ img {
   height: 100%;
   max-height: 8vh;
   
+}
+
+.logo:focus {
+  outline: none;
 }
 
 .logo img {
@@ -170,6 +193,7 @@ img {
 }
 
 .promo .section-heading {
+  font-size: 3.5rem;
   text-align: center;
   width: 100%;
 }
@@ -241,9 +265,8 @@ img {
 }
 
 .services-heading {
-  font-size: 1.3rem;
   margin-bottom: 1rem;
-  color: #8c8c8c;
+  color: #949494;
 }
 
 .services-item img {
@@ -253,14 +276,15 @@ img {
 }
 
 .services-item p {
+  font-size: 1.125rem;
   margin-bottom: 1rem;
 }
-
 
 .services-item:nth-child(1),
 .services-item:nth-child(2),
 .services-item:nth-child(3) {
 	margin-bottom: 5em;
+  
 }
 
 button {
@@ -279,9 +303,12 @@ button:active {
   color: #a6a6a6;
   border-color: #a6a6a6;
   transition: all 0.3s ease;
-  
+
 }
 
+button:focus {
+  outline: none;
+}
 
 .services .show-more:focus {
 	outline: none;
@@ -319,7 +346,7 @@ button:active {
 }
 
 .input-wrapper {
-  width: 407px;
+  width: 70%;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -354,6 +381,7 @@ button:active {
   box-sizing: border-box;
   border-radius: 10px;
   padding: 10px;
+  opacity: 0.7;
 }
 
 .text-input:hover,
