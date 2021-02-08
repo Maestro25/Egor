@@ -62,13 +62,14 @@
 	.burger {
 		display: block;
 		width: 40px;
-		
+		background-color: transparent;
 	}
 
-	.burger:focus {
-		background-color: transparent;
-		outline: none;
-	}
+
+ 	.burger.open {
+ 		background-color: transparent;
+ 	}
+
 
 	.nav-list {
 		position: absolute;

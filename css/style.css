@@ -115,9 +115,14 @@ h3 {
 
 }
 
-.burger:active,
-.burger:focus {
-  outline: none;
+  .burger:active,
+  .burger:focus,
+  .burger:focus-within,
+  .burger:visited,
+  .burger:focus-visible {
+    border: none;
+    outline: none;
+    background-color: transparent;
 }
 
 .burger div {
