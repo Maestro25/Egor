@@ -5,36 +5,69 @@
 		width: 60%;
 	}
 
+	.promo .section-heading {
+		font-size: 2.5rem;
+	}
+
 
 /* Medium Devices, Desktops */
 @media screen and (max-width: 992px) {
 	.nav-list {
 		width: 80%;
 	}
+
+	.promo .section-heading {
+		font-size: 2.2rem;
+	}
+
+	.section-heading {
+		font-size: 2.2rem;
+	}
+
 }
 
 /* Small Devices, Tablets */
 @media screen and (max-width: 768px) {
 
-	section.promo {
-		padding-top: 10em;
+	body {
+		font-size: 16px;
+	}
+
+	.services-item p,
+	.promo p {
+		font-size: 0.9rem;
+	}
+
+	.promo,
+	.services, 
+	.write-me {
+		padding-top: 11vh;
 	}
 
 	.page-header .content-wrapper {
-		height: 10rem;
+		height: 10vh;
 	}
 
-	.section-heading {
+	.section-heading,
+	.promo .section-heading {
 		font-size: 1.75rem;
 		
 
+	}
+
+	.services-heading {
+		font-size: 1.3rem;
 	}
 
 	.burger {
 		display: block;
 		width: 40px;
 		
+	}
 
+	.burger:focus {
+		background-color: transparent;
+		outline: none;
 	}
 
 	.nav-list {
@@ -52,9 +85,19 @@
 		transition: transform 0.3s ease-in;
 	}
 
-	/*.nav-link {
-		opacity: 0;
-	} */
+	.nav-link {
+		color: #262626;
+	}
+	.nav-link:hover {
+		color: #949494;
+		transition: all 0.3s ease;
+	}
+	}
+	.nav-link:active {
+		color: #646464;
+		transition: all 0.3s ease;
+	}
+		
 
 	.contacts-list {
 		width: 80%;
@@ -89,13 +132,19 @@
 
 @media screen and (max-width: 768px) and (orientation: landscape) {
 
-	section.promo {
-		padding-top: 6rem;
-		
+	.burger:focus {
+		background-color: transparent;
+		outline: none;
+	}
+
+	.promo,
+	.services, 
+	.write-me {
+		padding-top: 15vh;
 	}
 
 	.page-header .content-wrapper{
-		height: 5rem;
+		height: 14vh;
 	}
 
 	.nav-list {
@@ -140,6 +189,7 @@
 	.promo p {
 		width: 100%;
 	}
+
 	.services-list {
 		flex-direction: column;
 		align-items: center;
