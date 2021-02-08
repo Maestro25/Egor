@@ -69,18 +69,6 @@
  	.burger.open {
  		background-color: transparent;
  	}
-
-    .burger.open:active,
-  	.burger.open:focus,
-  	.burger.open:focus-within,
-  	.burger.open:hover,
-  	.burger.open:visited,
- 	.burger.open:focus-visible {
-    border: none;
-    outline: none;
-    background-color: transparent;
-}
-
  	
 
 

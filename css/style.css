@@ -114,10 +114,10 @@ h3 {
 
 }
 
+  .burger:hover,
   .burger:active,
   .burger:focus,
   .burger:focus-within,
-  .burger:hover,
   .burger:visited,
   .burger:focus-visible {
     border: none;
