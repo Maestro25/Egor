@@ -4,12 +4,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
  	<title>Заголовок</title>
-  	<link rel="preconnect" href="https://fonts.gstatic.com">
+  	<link rel="preconnect" href="https://fonts.gstatic.com"> 
 	<link href="https://fonts.googleapis.com/css2?family=Vollkorn+SC:wght@400;600;700&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap" rel="stylesheet"> 
   	<link rel="stylesheet" href="css/normalize.css" type="text/css">
   	<link rel="stylesheet" href="css/style.css" type="text/css">
-  	<link rel="stylesheet" href="css/adaptive.css" type="text/css"> 
+  	<link rel="stylesheet" href="css/adaptive.css" type="text/css">
+
 </head>
 <body>
 	<header class="page-header fixed">
@@ -36,10 +37,8 @@
 		<div class="content-wrapper">
 			<section class="promo" id="promo">
 				<h2 class="section-heading">Юридические услуги в Ростове-на-Дону</h2>
-				
-				<p class="text">Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Harum, quam sint saepe totam! Odit excepturi dolores placeat aut, quod ex sed distinctio, incidunt, illo adipisci eum, mollitia ipsum saepe quam?</p>
 				<img src="img/promo1.jpg" width="500px" height="" alt="" class="promo-image">
-				
+				<p class="text">Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Harum, quam sint saepe totam! Odit excepturi dolores placeat aut, quod ex sed distinctio, incidunt, illo adipisci eum, mollitia ipsum saepe quam?</p>
 				<a href="#write" class="write-link">Напишите нам</a>
 			</section>
 			<section class="services" id="services">	
@@ -87,22 +86,22 @@
 				<h2 class="section-heading">Напишите нам</h2>
 				<form action="message.php" method="post" class="write-me-form">
 					<p class="input-wrapper">
-						<label for="name" class="input-label">Ф.И.О.:</label>
-						<input type="text" name="name" id="name" class="text-input js-input" placeholder="Иванов Иван Иванович" required tabindex="1">
+						<label for="name" class="input-label">Ф.И.О.</label>
+						<input type="text" name="name" id="name" class="text-input js-input" placeholder="Иванов Иван Иванович" required>
 					</p>
 					<p class="input-wrapper">
-						<label for="email" class="input-label">E-mail:</label>
-						<input type="email" name="email" id="email" class="text-input js-input" placeholder="google@gmail.com" required tabindex="2">
+						<label for="email" class="input-label">E-mail</label>
+						<input type="email" name="email" id="email" class="text-input js-input" placeholder="google@gmail.com" required >
 					</p>
 					<p class="input-wrapper">
-						<label for="tel" class="input-label">Номер телефона:</label>
-						<input type="tel" name="tel" id="tel" class="text-input js-input" placeholder="" required tabindex="3">
+						<label for="tel" class="input-label">Номер телефона</label>
+						<input type="tel" name="tel" id="tel" class="text-input js-input" required  minlength="15">
 					</p>
 					<p class="input-wrapper-big">
 						<label for="text-field" class="input-label">Опишите вашу проблему</label>
-						<textarea name="text-field" id="text-field" cols="30" rows="10" class="text-field js-message" required placeholder="Напишите проблему тут" tabindex="4"></textarea>
+						<textarea name="text-field" id="text-field" cols="30" rows="10" class="text-field js-message" required placeholder="Напишите проблему тут" minlength="20" maxlength="100"></textarea>
 					</p>
-					<button class="section-button js-submit" name="submit" type="submit" tabindex="5">ОТПРАВИТЬ</button>
+					<button class="section-button js-submit" name="submit" type="submit">ОТПРАВИТЬ</button>
 				</form>
 			</section>
 			<section class="contacts" id="contacts">
@@ -144,5 +143,7 @@
 		</div>
 	</footer>
 	<script type="text/javascript" src="js/burger.js"></script>
-</body>
+	<script type="text/javascript" src="js/form.js"></script>
+	<script src="https://unpkg.com/imask"></script>
+	<script type="text/javascript" src="js/phone.js"></script>
 </html>
